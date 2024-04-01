@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Webpack Demo</title>
+  </head>
+  <body class="container">
+    <!-- <img src="./assets/webpack.svg" alt=""> -->
+    <div class="copperMainBox">
+
+      <div class="video-box">
+          <!-- <video  id="video" class="video" controls style="width: 400px; height: 400px;display: none;"
+              crossorigin="anonymous"
+              autoplay="true" muted="true" webkit-playsinline playsinline
+          ></video> -->
+      </div>
+
+      <div class="img-box" id="preImgBox">
+          <div class="l_canvas"><canvas id="canvas01"></canvas></div>
+
+      </div>
+      <p id="log" style="display: none; color: #fff; position: absolute; left: 0; top: 15px; width: 100%; line-height: 14px; font-size: 10px; word-break: break-all;"></p>
+      <p id="log2" style="display: none; color: #fff; position: absolute; left: 0; top: 0; width: 100%; line-height: 14px; font-size: 10px; word-break: break-all;"></p>
+              
+  </div>
+  <div class="foot">
+      <div class="select-tip">滑动视频选择封面</div>
+      <div class="image-stack">
+          <!-- <div class="picAdd">
+			  <input id="file" type="file" capture="camera"/>
+              相册导入
+
+
+          </div> -->
+          <div id="progress-bar" style="flex: 1;">
+              <!-- <div id="progress-bar">
+                  <div id="progress-background">
+                      <div id="imgs"></div>
+      
+                      <div id="progress-foreground"></div>
+                  </div>
+              </div> -->
+              <div class="mui-input-row mui-input-range" >
+                  <div id="imgs"></div>
+                  <input id="videoRange" type="range" id='block-range' value="0" min="0" max="100" >
+              </div>
+          </div>
+          
+      </div>
+  </div>
+  
+  <!-- vertical -->
+  <div class="setAspectRatio horizontal" mode="horizontal" style="display: none;">
+      <!-- <img src="img/horizontal.png" class="icon"> -->
+      <span>横图选择</span>
+  </div>
+  
+  </body>
+</html>

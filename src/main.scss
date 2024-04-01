@@ -1,0 +1,231 @@
+
+body {
+	background-color: #000;
+	margin: 0;
+	height: 100vh;
+  }
+
+  #imgs {
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	display: flex;
+	width: fit-content;
+	font-size: 0;
+	opacity: 0.5;
+  }
+  #imgs img {
+	width: 0.667rem;
+	height: 1.08rem;
+	object-fit: cover;
+  }
+  #img {
+	max-height: 100%;
+	width: 100%;
+	object-fit: cover;
+  }
+  .copperMainBox {
+	width: 6.67rem;
+	margin: 0 auto;
+  }
+  .copperMainBox .img-box {
+	width: 100%;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+  }
+  .foot {
+	width: 6.67rem;
+	position: fixed;
+	bottom: 0.8rem;
+	left: 50%;
+	transform: translate(-50%, 0);
+  }
+  .foot .select-tip {
+	margin-bottom: 0.2rem;
+	font-size: 0.24rem;
+	font-family: PingFangSC, PingFang SC;
+	font-weight: 500;
+	color: #FEFEFE;
+	line-height: 0.24rem;
+	width: 100%;
+	text-align: center;
+  }
+  .image-stack {
+	width: 100%;
+	display: flex;
+  }
+  .image-stack .picAdd {
+	width: 1.08rem;
+	height: 1.08rem;
+	background: #373739;
+	border-radius: 0.06rem;
+	font-size: 0.2rem;
+	font-family: PingFangSC, PingFang SC;
+	font-weight: 400;
+	color: #FFFFFF;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-right: 0.3rem;
+	position: relative;
+  }
+  .image-stack .picAdd img {
+	width: 0.26rem;
+	height: 0.26rem;
+	margin-top: 0.23rem;
+  }
+  .image-stack .picAdd span {
+	width: 100%;
+	text-align: center;
+  }
+  #file {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  }
+  #progress-background {
+	position: relative;
+	display: flex;
+	align-items: center;
+  }
+  #progress-background #progress-foreground {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 1.1rem;
+  }
+  #progress-background #progress-foreground .select-img {
+	width: 0.53rem;
+	height: auto;
+	box-sizing: content-box;
+	border-radius: 0.01rem;
+	border: 0.04rem solid #FFFFFF;
+	float: right;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+  }
+  #progress-background #progress-foreground .select-img img {
+	width: 100%;
+	height: 100%;
+  }
+  .cameraBox {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.4);
+	z-index: 999;
+  }
+  .cameraBoxWrap {
+	text-align: center;
+	height: auto;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: #FFF;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 0;
+	margin: 0;
+  }
+  .cameraBoxWrap li {
+	height: 0.98rem;
+	line-height: 0.98rem;
+	text-align: center;
+	color: #000000;
+	border-bottom: 0.5px solid #e5e5e5;
+	list-style: none;
+  }
+  .cameraBoxWrap li:nth-last-child(1) {
+	border: none;
+  }
+  .cameraBoxWrap li img {
+	width: 0.42rem;
+	vertical-align: middle;
+	margin-bottom: 3px;
+  }
+  .setAspectRatio {
+	border-radius: 0.3rem;
+	border: 0.01rem solid #fafafa;
+	font-size: 0.24rem;
+	font-family: PingFangSC, PingFang SC;
+	font-weight: 500;
+	color: #FFFFFF;
+	height: 0.6rem;
+	padding: 0.14rem 0.18rem;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	left: 50%;
+	bottom: 1.12rem;
+	transform: translate(-50%, 0);
+  }
+  .setAspectRatio img.icon {
+	width: 0.32rem;
+	height: auto;
+	margin-right: 0.09rem;
+	object-fit: cover;
+  }
+  .cropper-view-box {
+	outline: 0.02rem solid #fff;
+	outline-color: #fff;
+  }
+  
+  
+#progress-bar {
+	position: relative;
+}
+.mui-input-range input[type=range] {
+    margin: 0;
+    height: 1.08rem;
+    background-color: transparent;
+}
+.mui-input-range input[type=range] {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    margin: 17px 0;
+    padding: 0;
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    background-color: #999;
+    -webkit-appearance: none !important;
+}
+.mui-input-row.mui-input-range {
+	overflow: visible;
+	padding-right: 0;
+  }
+  .mui-input-range input[type=range] {
+	margin: 0;
+	height: 1.08rem;
+	background-color: transparent;
+  }
+  .mui-input-range input[type=range]::-webkit-slider-thumb {
+	width: 0.667rem;
+	height: 1.08rem;
+	box-sizing: content-box;
+	border-color: #fff;
+	border-radius: unset;
+	background-color: unset;
+	background-clip: padding-box;
+	border-radius: 0.01rem;
+	border: 0.03rem solid #FFFFFF;
+	-webkit-appearance: unset !important;
+  }
+  .mui-tooltip {
+	display: none;
+  }
